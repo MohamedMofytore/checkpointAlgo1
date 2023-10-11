@@ -1,0 +1,30 @@
+ALGORITHM mos algo
+
+VAR 
+nb-CHAR:INTEGER:=0 
+nb-words:INTEGER:=0
+ nb-voy:INTEGER:=0
+  c:CHAR      
+
+  BEGIN   
+
+   WHILE (c<>".") DO     
+   read(c)     
+   nb-CHAR:=nb-CHAR+1     
+   if (c=" ")then     
+    nb-words:= nb-words+1 
+
+        endif  
+
+        if(c="o"or c="y"or c="i"or c="a"or c="u")    
+         then   
+            nb-voy:=nb-voy+1   
+
+              endif     
+
+              end WHILE  
+
+                 write (nb-char) 
+                 write(nb_words)
+                 write(nb_voy)
+                 end.
